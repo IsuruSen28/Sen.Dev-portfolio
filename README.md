@@ -26,9 +26,17 @@ A modern React portfolio built with Vite that highlights projects, experience, a
 ### Prerequisites
 
 - Node.js
-- `pnpm` (recommended, based on `pnpm-lock.yaml`)
+- `npm` or `pnpm`
 
 ### Install dependencies
+
+If you use npm:
+
+```bash
+npm install
+```
+
+If you use pnpm:
 
 ```bash
 pnpm install
@@ -36,17 +44,41 @@ pnpm install
 
 ### Run development server
 
+If you use npm:
+
+```bash
+npm run dev
+```
+
+If you use pnpm:
+
 ```bash
 pnpm dev
 ```
 
 ### Build for production
 
+If you use npm:
+
+```bash
+npm run build
+```
+
+If you use pnpm:
+
 ```bash
 pnpm build
 ```
 
 ### Preview production build
+
+If you use npm:
+
+```bash
+npm run preview
+```
+
+If you use pnpm:
 
 ```bash
 pnpm preview
