@@ -227,7 +227,7 @@ const socialImgs = [
       {
         title: "Mini Vikings - ongoing",
         description: "A 2D pixel-art platformer game built with Godot.",
-        image: "/public/images/GProject2.png",
+        image: "https://raw.githubusercontent.com/IsuruSen28/Sen.Dev-portfolio/refs/heads/main/public/images/GProject2.png",
         tech: ["Godot", "GDScript", "Aseprite", 'Indie Game'],
       },
     ],
