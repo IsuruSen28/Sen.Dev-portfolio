@@ -1,52 +1,8 @@
 import { useState } from "react";
 import TitleHeader from "./TitleHeader";
+import { projects} from '../constants/index.js'
 
 const Slider = () => {
-  const works1 = {
-    "Web": [
-      {
-        title: "E-commerce Storefront",
-        description: "A full-stack web application built with React and Next.js for managing an online clothing store.",
-        image: "/public/images/project1.png",
-        tech: ["React", "Next.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
-      },
-      {
-        title: "Next.js Authentication Starter",
-        description: "Next.js + TypeScript authentication starter implementing secure, production-ready user auth with NextAuth, Prisma, Tailwind, and email/2FA flows.",
-        image: "/public/images/project2.png",
-        tech: ["React", "Next.js", "PostgreSQL","ShadCN UI"],
-      },
-      {
-        title: "Multi-Vendor E-commerce Platform",
-        description: "A full-stack web application built with React and Next.js for managing a multi-vendor marketplace.",
-        image: "/public/images/project1.png",
-        tech: ["React", "Next.js", "PostgreSQL"],
-      },
-    ],
-    "IoT": [
-      {
-        title: "Automated Home Security System",
-        description: "IoT-Based Smart Home Security System using ESP8266 with motion, gas, flame, and vibration detection capabilities.",
-        image: "/public/images/IProject1.png",
-        tech: ["Arduino", "Firebase", "ESP32"],
-      },
-      
-    ],
-     "Game": [
-      {
-        title: "Spaceship Shooter Game",
-        description: "A 2D side-scrolling shooter game built with Godot.",
-        image: "/public/images/GProject1.png",
-        tech: ["Godot", "GDScript", "Photoshop", 'Indie Game'],
-      },
-      {
-        title: "Mini Vikings",
-        description: "A 2D pixel-art platformer game built with Godot.",
-        image: "/public/images/project3.png",
-        tech: ["Godot", "GDScript", "Aseprite", 'Indie Game'],
-      },
-    ],
-  };
 
   const [activeCategory, setActiveCategory] = useState("Web");
 
@@ -60,7 +16,7 @@ const Slider = () => {
         
         {/* Tab Nav */}
         <div className="flex border-b gap-2 border-white/10 mb-10 w-fit mx-auto">
-          {Object.entries(works1).map(([category, items]) => (
+          {Object.entries(projects).map(([category, items]) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
@@ -100,7 +56,7 @@ const Slider = () => {
 
         {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {works1[activeCategory].map((project, index) => (
+          {projects[activeCategory].map((project, index) => (
             <div
               key={index}
               className="

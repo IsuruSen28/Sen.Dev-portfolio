@@ -1,6 +1,5 @@
 import TitleHeader from '../components/TitleHeader'
 import { techStackImgs } from '../constants/index.js'
-import TechLogos from '../components/models/TechLogos.jsx'
 
 const TechStack = () => {
   return (

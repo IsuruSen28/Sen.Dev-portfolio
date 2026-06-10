@@ -187,6 +187,52 @@ const socialImgs = [
   },
 ];
 
+ const projects = {
+    "Web": [
+      {
+        title: "E-commerce Storefront",
+        description: "A full-stack web application built with React and Next.js for managing an online clothing store.",
+        image: "/public/images/project1.png",
+        tech: ["React", "Next.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
+      },
+      {
+        title: "Next.js Authentication Starter",
+        description: "Next.js + TypeScript authentication starter implementing secure, production-ready user auth with NextAuth, Prisma, Tailwind, and email/2FA flows.",
+        image: "/public/images/project2.png",
+        tech: ["React", "Next.js", "PostgreSQL","ShadCN UI"],
+      },
+      {
+        title: "Multi-Vendor E-commerce Platform",
+        description: "A full-stack web application built with React and Next.js for managing a multi-vendor marketplace.",
+        image: "/public/images/project4.png",
+        tech: ["React", "Next.js", "PostgreSQL"],
+      },
+    ],
+    "IoT": [
+      {
+        title: "Automated Home Security System",
+        description: "IoT-Based Smart Home Security System using ESP8266 with motion, gas, flame, and vibration detection capabilities.",
+        image: "/public/images/IProject1.png",
+        tech: ["Arduino", "Firebase", "ESP32"],
+      },
+      
+    ],
+     "Game": [
+      {
+        title: "Spaceship Shooter Game",
+        description: "A 2D side-scrolling shooter game built with Godot.",
+        image: "/public/images/GProject1.png",
+        tech: ["Godot", "GDScript", "Photoshop", 'Indie Game'],
+      },
+      {
+        title: "Mini Vikings - ongoing",
+        description: "A 2D pixel-art platformer game built with Godot.",
+        image: "/public/images/GProject2.png",
+        tech: ["Godot", "GDScript", "Aseprite", 'Indie Game'],
+      },
+    ],
+  };
+
 export {
   words,
   abilities,
@@ -198,4 +244,5 @@ export {
   socialImgs,
   techStackImgs,
   navLinks,
+  projects,
 };
