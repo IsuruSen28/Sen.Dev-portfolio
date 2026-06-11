@@ -1,5 +1,5 @@
 
-const Button = ({text, id, className}) => {
+const Button = ({text, className, id}) => {
   return (
     <a onClick={(e) => {
         e.preventDefault();
@@ -17,16 +17,12 @@ const Button = ({text, id, className}) => {
         }
     }}
     className={`${className ?? ''} cta-wrapper`}>
-        {/* <div className='cta-button group'>
-            <div className='bg-circle'>
-                <p className='text'> {text}</p>
-            </div>
-        </div> */}
-        <div className="group relative flex cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-zinc-900 px-4 py-4">
-        <div className="absolute -right-10 top-1/2 h-[120%] w-[120%] origin-center -translate-y-1/2 rounded-full bg-slate-50 transition-all duration-500 group-hover:right-10 group-hover:size-10" />
-            <p className="-translate-x-5 uppercase text-black transition-all duration-500 group-hover:-translate-x-5 group-hover:text-white md:text-lg xl:translate-x-0">
-                {text}
-            </p>
+        <div className='cta-button group'>
+            <div className='bg-circle'/>
+                <p className='text'>{text}</p>
+                <div className="arrow-wrapper">
+                    <img src="/images/arrow-down.svg" alt="arrow" />
+                </div>
         </div>
     </a>
   )

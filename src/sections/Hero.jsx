@@ -1,4 +1,3 @@
-import React from 'react'
 import { words } from '../constants'
 import Button from '../components/Button'
 import HeroExperience from '../components/HeroModels/HeroExperience'
@@ -54,15 +53,31 @@ const Hero = () => {
                     <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
                         Hi, I'm Isuru, a developer based in Sri Lanka with a passion for code.
                     </p>
-                <Button className='md:w-80 md:h-16 w-20 h-12'
-                id='button' 
-                text='See my Work'/>
+
+                    <Button
+                    className='md:w-80 md:h-16 w-60 h-12'
+                    text='See my Work'
+                    id='button'
+                    />
+                
+                {/* <button className="" >
+                    <div className="cta-button group">
+                        <div className="bg-circle" />
+                        <p className="text">See my Work</p>
+                        <div className="arrow-wrapper">
+                            <img src="/images/arrow-down.svg" alt="arrow" />
+                        </div>
+                    </div>
+                </button> */}
+
                 </div>
             </header>
             {/* RIGHT: 3D MODEL */}
             <figure>
-                <div className='hero-3d-layout'>
-                    <HeroExperience />
+                <div className="hidden sm:block">
+                    <div className='hero-3d-layout'>
+                        <HeroExperience />
+                    </div>
                 </div>
             </figure>
         </div>
